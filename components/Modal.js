@@ -7,7 +7,7 @@ import { db, storage } from "../firebase";
 import { addDoc, collection, doc, serverTimestamp, updateDoc } from "firebase/firestore";
 import { useSession } from "next-auth/react"
 import { ref, getDownloadURL, uploadString } from "firebase/storage";
-// import { async } from "@firebase/util";
+import { async } from "@firebase/util";
 
 
 function Modal() {
@@ -19,7 +19,7 @@ function Modal() {
     const [loading, setLoading] = useState(false);
 
     const uploadPost = async () => {
-        if (loading) return;
+        if(loading) return;
 
         setLoading(true);
 
@@ -29,7 +29,7 @@ function Modal() {
         // 4) get a download Url from fb storage and update the original post with image 
 
 
-        const docRef = await addDoc(collection(db,'post'), {
+        const docRef = await addDoc(collection(db,'posts'), {
             username: session.user.username,
             caption: captionRef.current.value,
             profileImg: session.user.image,
