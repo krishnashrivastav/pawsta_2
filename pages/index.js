@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header';
 import Feed from '../components/Feed';
 import styles from '../styles/Home.module.css'
+import Modal from '../components/Modal';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Feed />
 
       {/* modal */}
+      <Modal />
 
     </div>
   );

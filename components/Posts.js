@@ -9,7 +9,7 @@ const posts = [
         caption: "Hey everyone.... Have a great day!!!",
     },
     {
-        id: '132',
+        id: '131',
         username: 'lucy_xoox',
         userImg: "https://i.pinimg.com/originals/ce/03/a1/ce03a1ec8851a33b862a3eb3d122ecb5.jpg",
         img: "https://i.pinimg.com/originals/ce/03/a1/ce03a1ec8851a33b862a3eb3d122ecb5.jpg",
